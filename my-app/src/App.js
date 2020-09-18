@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from "./componets/navbar"
 import Wrapper from "./componets/wrapper"
+import Body from "./componets/body"
+import { render } from '@testing-library/react';
+import friends from "./friends.json";
+
 
 
 function App() {
   return (
-    <Wrapper>
-      <Navbar componet={Navbar} />
-    </Wrapper>
-
-    
+    <div className="App">
+      <Wrapper>
+        <Header />
+        <Main />
+      </Wrapper>
+    </div>
   );
 }
 
